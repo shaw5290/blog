@@ -9,11 +9,13 @@ import { blogTheme } from './blog-theme'
 // const base = process.env.GITHUB_ACTIONS === 'true'
 //   ? '/vitepress-blog-sugar-template/'
 //   : '/'
+const base = '/blog/'
 
 // Vitepress 默认配置
 // 详见文档：https://vitepress.dev/reference/site-config
 export default defineConfig({
   // 继承博客主题(@sugarat/theme)
+  base,
   extends: blogTheme,
   // base,
   lang: 'zh-cn',
