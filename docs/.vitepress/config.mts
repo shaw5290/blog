@@ -41,10 +41,10 @@ export default defineConfig({
 
     // 设置logo
     // logo: '/logo.png',
-    // editLink: {
-    //   pattern: 'https://github.com/xxxx/:path',
-    //   text: '去 GitHub 上编辑内容',
-    // },
+    editLink: {
+      pattern: 'https://github.com/shaw5290/blog/tree/main/docs/:path',
+      text: '编辑内容',
+    },
     nav: [
       { text: '首页', link: '/' },
       // { text: '关于作者', link: '' },
