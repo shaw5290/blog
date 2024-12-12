@@ -103,7 +103,7 @@ export default defineConfig({
     // '**/index.md',
     '**/TODO.md',
   ],
-  ignoreDeadLinks: true,
+  // ignoreDeadLinks: true,
   // 将路由处理成无 .html 后缀
   // cleanUrls: true,
 })
