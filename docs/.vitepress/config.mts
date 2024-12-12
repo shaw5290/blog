@@ -98,12 +98,8 @@ export default defineConfig({
     //   },
     // ],
   },
-  srcExclude: [
-    '**/README.md',
-    // '**/index.md',
-    '**/TODO.md',
-  ],
+  srcExclude: ['**/README.md', '**/index.md', '**/TODO.md'],
   // ignoreDeadLinks: true,
   // 将路由处理成无 .html 后缀
-  // cleanUrls: true,
+  cleanUrls: true,
 })
