@@ -38,7 +38,6 @@ export default defineConfig({
     returnToTopLabel: '回到顶部',
     sidebarMenuLabel: '相关文章',
     lastUpdatedText: '上次更新于',
-
     // 设置logo
     // logo: '/logo.png',
     editLink: {
@@ -47,8 +46,51 @@ export default defineConfig({
     },
     nav: [
       { text: '首页', link: '/' },
-      // { text: '关于作者', link: '' },
+      { text: 'Web', link: '/web/' },
+      { text: '物联网', link: '/IOT/' },
+      { text: '系统资源', link: '/system/' },
+      { text: '软件', link: '/software/' },
+      {
+        text: '项目',
+        items: [{ text: 'cloud', link: '/project/cloud/' }],
+      },
+      {
+        text: 'DevOps',
+        items: [
+          {
+            text: 'Git 仓库',
+            link: 'https://git.aicoa.cn/explore/repos/',
+            target: '_blank',
+            rel: 'sponsored',
+          },
+          {
+            text: 'Nacos 服务管理',
+            link: 'http://nacos.aicoa.cn/',
+            target: '_blank',
+            rel: 'sponsored',
+          },
+          {
+            text: 'Maven 仓库',
+            link: 'https://registry.mvn.aicoa.cn/#browse/browse:maven-public',
+            target: '_blank',
+            rel: 'sponsored',
+          },
+        ],
+      },
+      { text: '关于作者', link: '/about-us' },
+      { text: '更多', items: [{ text: '敬请期待...', link: '#' }] },
     ],
+    sidebar: {
+      '/project/cloud/': [
+        {
+          text: 'cloud',
+          items: [
+            { text: '项目简介', link: '/project/cloud/introduction' },
+            { text: 'Getting Started', link: '/getting-started' },
+          ],
+        },
+      ],
+    },
     // socialLinks: [
     //   {
     //     icon: 'github',
@@ -56,4 +98,8 @@ export default defineConfig({
     //   },
     // ],
   },
+  srcExclude: ['**/README.md', '**/index.md', '**/TODO.md'],
+  ignoreDeadLinks: true,
+  // 将路由处理成无 .html 后缀
+  cleanUrls: true,
 })

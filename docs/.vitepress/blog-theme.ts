@@ -26,7 +26,8 @@ const blogTheme = getThemeConfig({
 
   // markdown 图表支持（会增加一定的构建耗时）
   mermaid: true,
-
+  //推荐文章
+  recommend: false,
   // 页脚
   footer: {
     version: false,
@@ -100,7 +101,13 @@ const blogTheme = getThemeConfig({
   //   ],
   //   duration: 0,
   // },
-
+  comment: {
+    repo: 'shaw5290/blog',
+    repoId: 'R_kgDONcNapw',
+    category: 'Announcements',
+    categoryId: 'DIC_kwDONcNap84ClKQt',
+    inputPosition: 'top',
+  },
   oml2d: {
     mobileDisplay: true,
     models: [
