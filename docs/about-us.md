@@ -14,8 +14,6 @@ outline: [2,3]
 
 # 关于作者
 
-xxx
+## 联系方式
 
-## xxx
-
-### ttt
+邮箱：<shaw@aicoa.cn>

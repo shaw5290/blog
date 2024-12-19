@@ -26,6 +26,8 @@ const blogTheme = getThemeConfig({
 
   // markdown 图表支持（会增加一定的构建耗时）
   mermaid: true,
+  //精选文章
+  hotArticle: false,
   //推荐文章
   recommend: false,
   // 页脚
