@@ -46,10 +46,92 @@ export default defineConfig({
     },
     nav: [
       { text: '首页', link: '/' },
-      { text: 'Web', link: '/web/' },
-      { text: '物联网', link: '/IOT/' },
-      { text: '系统资源', link: '/system/' },
-      { text: '软件', link: '/software/' },
+      // {
+      //   text: 'Web',
+      //   items: [
+      //     {
+      //       text: '前端',
+      //       items: [
+      //         {
+      //           text: 'Vue',
+      //           link: '/web/vue/',
+      //         },
+      //         // {
+      //         //   text: 'React',
+      //         //   link: '/web/react/',
+      //         // },
+      //         // {
+      //         //   text: 'Uni-app',
+      //         //   link: '/web/uni-app/',
+      //         // },
+      //       ],
+      //     },
+      //     {
+      //       text: '后端',
+      //       items: [
+      //         {
+      //           text: 'Java 17',
+      //           link: '/web/java/17/',
+      //         },
+      //         {
+      //           text: 'SpringBoot',
+      //           link: '/web/springboot/',
+      //         },
+      //         {
+      //           text: 'SpringCloud',
+      //           link: '/web/springcloud/',
+      //         },
+      //         // {
+      //         //   text: 'Python',
+      //         //   link: '/web/python/',
+      //         // },
+      //       ],
+      //     },
+      //     {
+      //       text: '数据库',
+      //       items: [
+      //         {
+      //           text: 'Mysql',
+      //           link: '/web/mysql/',
+      //         },
+      //         // {
+      //         //   text: 'Sql Server',
+      //         //   link: '/web/sql-server/',
+      //         // },
+      //         // {
+      //         //   text: 'Oracle',
+      //         //   link: '/web/oracle/',
+      //         // },
+      //       ],
+      //     },
+      //   ],
+      // },
+      // { text: '物联网', link: '/IOT/' },
+      // {
+      //   text: '系统',
+      //   items: [
+      //     {
+      //       text: 'Window',
+      //       link: '/system/window',
+      //     },
+      //     {
+      //       text: 'Linux',
+      //       link: '/system/linux',
+      //     },
+      //     {
+      //       text: 'Docker',
+      //       link: '/system/docker',
+      //     },
+      //   ],
+      // },
+      {
+        text: '软件',
+        link: '/software/docker/',
+      },
+      {
+        text: '系统',
+        link: '/system/linux/Centos8',
+      },
       {
         text: '项目',
         items: [{ text: 'cloud', link: '/project/cloud/' }],
@@ -77,16 +159,69 @@ export default defineConfig({
           },
         ],
       },
+      // {
+      //   text: '文档列表',
+      //   link: '/official-dev-docs',
+      //   // target: '_blank',
+      //   // rel: 'sponsored',
+      // },
       { text: '关于作者', link: '/about-us' },
       { text: '更多', items: [{ text: '敬请期待...', link: '#' }] },
     ],
     sidebar: {
+      '/software': [
+        {
+          text: 'Docker',
+          link: '/software/docker/',
+          items: [
+            {
+              text: 'Nginx',
+              link: '/software/docker/nginx/',
+            },
+            {
+              text: 'Mysql8',
+              link: '/software/docker/mysql/',
+            },
+            {
+              text: 'Redis',
+              link: '/software/docker/redis/',
+            },
+            {
+              text: 'Rabbitmq',
+              link: '/software/docker/rabbitmq/',
+            },
+            {
+              text: 'Nacos',
+              link: '/software/docker/nacos/',
+            },
+          ],
+        },
+        {
+          text: 'Linux',
+          // link: '/software/linux/',
+          items: [
+            {
+              text: 'NPS内网穿透',
+              link: '/software/linux/NPS内网穿透',
+            },
+          ],
+        },
+      ],
       '/project/cloud/': [
         {
           text: 'cloud',
           items: [
             { text: '项目简介', link: '/project/cloud/introduction' },
             { text: 'Getting Started', link: '/getting-started' },
+          ],
+        },
+      ],
+      '/system/': [
+        {
+          text: 'Linux',
+          items: [
+            { text: 'Centos8', link: '/system/linux/Centos8' },
+            { text: 'Linux常用命令', link: '/system/linux/Linux常用命令' },
           ],
         },
       ],
