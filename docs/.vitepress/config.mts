@@ -125,12 +125,17 @@ export default defineConfig({
       //   ],
       // },
       {
-        text: '软件',
-        link: '/software/docker/',
-      },
-      {
-        text: '系统',
-        link: '/system/linux/Centos8',
+        text: '文档',
+        items: [
+          {
+            text: '软件',
+            link: '/software/docker/',
+          },
+          {
+            text: '系统',
+            link: '/system/linux/Centos8',
+          },
+        ],
       },
       {
         text: '项目',
@@ -141,7 +146,7 @@ export default defineConfig({
         items: [
           {
             text: 'Git 仓库',
-            link: 'https://git.aicoa.cn/explore/repos/',
+            link: 'https://gitea.aicoa.cn/explore/repos/',
             target: '_blank',
             rel: 'sponsored',
           },
@@ -159,12 +164,6 @@ export default defineConfig({
           },
         ],
       },
-      // {
-      //   text: '文档列表',
-      //   link: '/official-dev-docs',
-      //   // target: '_blank',
-      //   // rel: 'sponsored',
-      // },
       { text: '关于作者', link: '/about-us' },
       { text: '更多', items: [{ text: '敬请期待...', link: '#' }] },
     ],
@@ -223,6 +222,12 @@ export default defineConfig({
             { text: 'Centos8', link: '/system/linux/Centos8' },
             { text: 'Linux常用命令', link: '/system/linux/Linux常用命令' },
           ],
+        },
+      ],
+      '/web-3d/': [
+        {
+          text: 'WEB-3D',
+          items: [{ text: 'WEB-3d', link: '/web-3d/' }],
         },
       ],
     },
