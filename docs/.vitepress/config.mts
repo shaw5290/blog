@@ -162,6 +162,12 @@ export default defineConfig({
             target: '_blank',
             rel: 'sponsored',
           },
+          {
+            text: 'Nodejs 仓库',
+            link: 'https://registry.npm.aicoa.cn',
+            target: '_blank',
+            rel: 'sponsored',
+          },
         ],
       },
       { text: '关于作者', link: '/about-us' },
@@ -192,6 +198,10 @@ export default defineConfig({
             {
               text: 'Nacos',
               link: '/software/docker/nacos/',
+            },
+            {
+              text: 'Verdaccio',
+              link: '/software/docker/verdaccio/',
             },
           ],
         },
