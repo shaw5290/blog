@@ -5,7 +5,7 @@ flowchart LR
     A[CAD]
     B[3D Max]
     C[Unity]
-    D[WEB-3D]
+    D[WEBGL]
     A --> B
     B --> C
     C --> D

@@ -6,4 +6,12 @@ import './style.scss'
 // 自定义主题色
 import './user-theme.css'
 
-export default BlogTheme
+//自定义拓展 XmindViewer
+import Xmind from '../components/Xmind.vue'
+
+export default {
+  extends: BlogTheme,
+  enhanceApp({ app }) {
+    app.component('Xmind', Xmind)
+  },
+}
