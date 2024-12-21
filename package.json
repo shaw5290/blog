@@ -10,11 +10,11 @@
     "serve": "vitepress serve docs"
   },
   "dependencies": {
+    "@aicoa/xmind-embed-viewer": "^1.2.0",
     "@element-plus/icons-vue": "^2.3.1",
     "@sugarat/theme": "^0.5.2",
     "element-plus": "^2.7.2",
-    "vue": "3.5.12",
-    "xmind-embed-viewer": "^1.2.0"
+    "vue": "3.5.12"
   },
   "directories": {
     "doc": "docs"

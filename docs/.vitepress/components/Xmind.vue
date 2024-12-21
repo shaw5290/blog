@@ -3,14 +3,14 @@
 </template>
 <script setup>
 import { onMounted, ref } from 'vue'
-// import { XMindEmbedViewer } from 'xmind-embed-viewer'
+// import { XMindEmbedViewer } from '@aicoa/xmind-embed-viewer'
 const props = defineProps({
   url: String,
 })
 
 onMounted(async () => {
   console.log('viewer-url', props?.url)
-  const { XMindEmbedViewer } = await import('xmind-embed-viewer')
+  const { XMindEmbedViewer } = await import('@aicoa/xmind-embed-viewer')
   const viewer = new XMindEmbedViewer({
     el: '#xmind-container', // HTMLElement | HTMLIFrameElement | string
     // 如果在中国大陆境内速度慢，可以添加的参数 `region: 'cn'` 改为使用 xmind.cn 的图库作为依赖。

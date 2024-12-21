@@ -34834,13 +34834,13 @@ https://github.com/nodeca/pako/blob/master/LICENSE
                       staticClass:
                         "xmind-logo top-left-bar position-absolute d-flex justify-content-center align-items-center",
                     },
-                    [
-                      t("img", {
-                        staticClass: "xmind-logo__img",
-                        attrs: { src: r.manifests.xmindLogo },
-                        on: { click: r.handleGotoXmind },
-                      }),
-                    ]
+                    // [
+                    //   t("img", {
+                    //     staticClass: "xmind-logo__img",
+                    //     attrs: { src: r.manifests.xmindLogo },
+                    //     on: { click: r.handleGotoXmind },
+                    //   }),
+                    // ]
                   ),
                   e._v(" "),
                   r.isLoadingShareMap
